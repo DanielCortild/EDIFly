@@ -17,7 +17,7 @@ const TeamData = {
   },
   anders: {
     img: 'anders.jpg',
-    name: 'Anders Dam Jensen',
+    name: 'Anders Jensen',
     role: 'Chief Technology Officier',
     desc: 'Strong academic background in communication protocols and modern cryptography. Closely involved in the development of 802.11 wireless standards as well as communication protocols for automatic data capture. Held senior positions at Symbol Technologies, Cargolux, CHAMP Cargo Systems.'
   }

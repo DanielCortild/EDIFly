@@ -1,6 +1,6 @@
 {
-  "name": "edifly",
-  "version": "0.1.1",
+  "name": "EDIfly",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",

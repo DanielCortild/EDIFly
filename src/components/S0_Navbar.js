@@ -3,9 +3,9 @@ import React from "react";
 import $ from 'jquery';
 import cx from "classnames";
 
-import {Collapse, Navbar, NavItem, NavLink, Nav, Container} from "reactstrap";
+import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
-const NavbarItems = ['description', 'team', 'download', 'clients'];
+const NavbarItems = ['description', 'team', 'download', 'clients', 'contact '];
 
 export default () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -17,21 +17,15 @@ export default () => {
     document.documentElement.classList.toggle("nav-open");
   };
 
-  const activeStyle = (sectionID) => { return {
-    textDecoration: activeSection === sectionID ? 'underline' : 'none'
+  const linkStyle = (navbarColor, sectionID) => {return {
+    color: navbarColor === "" ? (activeSection === sectionID ? '#000000' : '#66615B') : (window.innerWidth >= 992 ? '#FFFFFF' : '#000000'),
+    fontWeight: '600'
   }};
 
   React.useEffect(() => {
-    $(document).removeClass("nav-open");
-    console.log("WTF")
-    setNavbarColor(window.location.pathname === "/" ? 'navbar-transparent' : '');
-    $('html').css('scroll-behavior', 'smooth');
-
     const updateNavbarColor = () => {
       let scrollTop = $(document).scrollTop();
-      let top = scrollTop < window.innerHeight - 100;
-      let home_page = window.location.pathname === "/";
-      let color = top && home_page ? "navbar-transparent" : "";
+      let color = scrollTop < window.innerHeight - 100 ? "navbar-transparent" : "";
       setNavbarColor(color);
 
       $('section').each(function () {
@@ -48,7 +42,7 @@ export default () => {
     <Navbar className={cx("fixed-top", navbarColor)} expand="lg" id="navbar">
       <Container>
         <div className="navbar-translate">
-          <NavLink><a href="#" style={linkStyle(navbarColor)}>EDIfly</a></NavLink>
+          <NavbarBrand href="#">EDIfly</NavbarBrand>
           <button className={cx("navbar-toggle navbar-toggler float-right", {
                     toggled: navbarCollapse,
                   })}
@@ -64,7 +58,7 @@ export default () => {
             {NavbarItems.map(key => (
               <NavItem>
                 <NavLink>
-                  <a href={`#${key}`} style={{...linkStyle(navbarColor), ...activeStyle(key)}}>
+                  <a href={`/#${key}`} style={linkStyle(navbarColor, key)}>
                     {key}
                   </a>
                 </NavLink>
@@ -76,8 +70,3 @@ export default () => {
     </Navbar>
   );
 }
-
-const linkStyle = (navbarColor) => {return {
-  color: navbarColor === "" ? '#66615B' : '#FFFFFF',
-  fontWeight: '600'
-}};

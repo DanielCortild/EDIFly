@@ -15,7 +15,7 @@ export default () => {
     <section style={{backgroundImage: 'url("/images/airport.jpg")'}} className="page-header" id="header">
       <div className="filter" />
       <div className="motto text-center">
-        <h1 className="font-weight-bold">EDIFly</h1>
+        <h1 className="font-weight-bold">EDIfly</h1>
         <h3>Some Special Message</h3>
       </div>
       <div className="position-absolute motto" style={{bottom: '10px', cursor: 'pointer'}} id="go_down">
