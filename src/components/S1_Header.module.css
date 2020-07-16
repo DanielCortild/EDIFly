@@ -1,0 +1,13 @@
+.carouselStyle {
+  filter: brightness(0.7);
+}
+
+.carouselStyle img {
+  border-radius: 0 !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+
+.carouselStyle ol {
+  display: none !important;
+}

@@ -7,7 +7,7 @@ import Description from 'components/S2_Description.js';
 import Description2 from 'components/S2_Description2.js';
 import Team from 'components/S3_Team.js';
 import Downloads from 'components/S4_Downloads.js';
-import Clients from 'components/S5_Clients.js';
+import Users from 'components/S5_Users.js';
 import Contact from 'components/S6_Contact.js';
 
 export default () => {
@@ -21,7 +21,7 @@ export default () => {
       <Description2 />
       <Team />
       <Downloads />
-      <Clients />
+      <Users />
       <Contact />
 
       
