@@ -7,18 +7,14 @@ import 'paper-kit-2/assets/sass/paper-kit.scss';
 import './assets/css/my-button.css';
 
 import NavBar from "components/S0_Navbar.js";
+import Home from "views/Home.js";
 import Footer from "components/SL_Footer.js";
 
-import Home from "views/Home.js";
-
 ReactDOM.render(
-  <Router>
+  <>
     <NavBar />
-    <Switch>
-      <Route path="/" exact render={props => <Home {...props}/>} />
-      <Redirect to="/" />
-    </Switch>
+    <Home />
     <Footer />
-  </Router>,
+  </>,
   document.getElementById("root")
 );
