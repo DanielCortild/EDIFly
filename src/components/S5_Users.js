@@ -3,7 +3,7 @@ import {Container, Row, Col, Modal} from 'reactstrap';
 
 import {fetchUsers} from '../api'
 
-const UserModal = ({user, close}) => {
+const UserModal = ({user: {name, desc, link, img_url}, close}) => {
   let open = true;
 
   return (
@@ -17,17 +17,17 @@ const UserModal = ({user, close}) => {
         >
           <span aria-hidden={true}>×</span>
         </button>
-        <h5 className="modal-title text-center">{user.name}</h5>
+        <h5 className="modal-title text-center">{name}</h5>
       </div>
       <div className="modal-body">
         <Row>
           <Col sm={6} lg={4}>
-            <img src={user.img_url} alt={user.name} className="w-100 img-thumbnail"/>
+            <img src={img_url ? img_url : '/images/empty_user.jpeg'} alt={name} className="w-100 img-thumbnail"/>
           </Col>
           <Col sm={6} lg={8}>
-            {user.desc}
+            {desc}
             <br />
-            <a href={user.link} target="_blank" rel="noopener noreferrer">Visit their webpage</a>
+            <a href={link} target="_blank" rel="noopener noreferrer">Visit their webpage</a>
           </Col>
         </Row>
       </div>
@@ -51,12 +51,12 @@ export default () => {
         <Row className="pl-4">
 
           {Object.keys(users).map(key => {
-            let user = users[key];
+            let {name, img_url} = users[key];
             let toggle = () => setOpenModal(key)
             return (
               <Col xs={6} sm={4} md={3} lg={2} className="p-4 mx-auto" key={key}>
                 <Row className="img-thumbnail h-100 align-items-center">
-                  <img src={user.img_url} alt={user.name} className="w-100" onClick={toggle} style={{cursor: 'pointer'}} />
+                  <img src={img_url ? img_url : '/images/empty_user.jpeg'} alt={name} className="w-100" onClick={toggle} style={{cursor: 'pointer'}} />
                 </Row>
               </Col>
             )

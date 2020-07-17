@@ -9,6 +9,7 @@ import Team from 'components/S3_Team.js';
 import Downloads from 'components/S4_Downloads.js';
 import Users from 'components/S5_Users.js';
 import Contact from 'components/S6_Contact.js';
+import Testimonals from 'components/S7_Testimonials.js';
 
 export default () => {
   React.useEffect(() => {
@@ -22,8 +23,8 @@ export default () => {
       <Team />
       <Downloads />
       <Users />
+      <Testimonals />
       <Contact />
-
       
       {window.innerWidth > 640 ? <TopButton /> : ''}
     </>

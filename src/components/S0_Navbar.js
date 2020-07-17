@@ -5,7 +5,7 @@ import cx from "classnames";
 
 import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
-const NavbarItems = ['description', 'team', 'download', 'clients', 'contact '];
+const NavbarItems = ['description', 'team', 'download', 'users', 'contact '];
 
 export default () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");

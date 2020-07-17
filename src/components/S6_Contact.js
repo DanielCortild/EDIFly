@@ -21,11 +21,11 @@ const TextInput = ({label, icon, ...other}) => {
 
 export default () => {
   return (
-    <section className="section section-gray" id="contact">
-      <Container className="p-3">
+    <section className="section section-light" id="contact">
+      <h2 className="text-center">Get in touch?</h2>
+      <Container className="px-3">
         <Row>
           <Col className="mx-auto" md="8">
-            <h2 className="text-center">Get in touch?</h2>
             <Form className="contact-form">
               <Row>
                 <Col lg="6">
