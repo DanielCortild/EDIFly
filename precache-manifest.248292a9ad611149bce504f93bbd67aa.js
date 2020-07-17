@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2fb4df6a767c4d729833f7443ff9610c",
+    "revision": "700d9417f373c2d4f0d28fa650e3788f",
     "url": "/edifly/index.html"
   },
   {
-    "revision": "4bc02a57a6c979b87d4e",
+    "revision": "32d96ca1c0d03213f6ea",
     "url": "/edifly/static/css/2.a739a981.chunk.css"
   },
   {
-    "revision": "30fe75fe9124937146fa",
+    "revision": "6a3b7e3b6daf20532d9a",
     "url": "/edifly/static/css/main.260569a0.chunk.css"
   },
   {
-    "revision": "4bc02a57a6c979b87d4e",
-    "url": "/edifly/static/js/2.07fff045.chunk.js"
+    "revision": "32d96ca1c0d03213f6ea",
+    "url": "/edifly/static/js/2.faf5c9d6.chunk.js"
   },
   {
-    "revision": "4386012a6d334684338618496b7aac20",
-    "url": "/edifly/static/js/2.07fff045.chunk.js.LICENSE.txt"
+    "revision": "7c4b6536cab2d1970758ff058c5fbbf8",
+    "url": "/edifly/static/js/2.faf5c9d6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "30fe75fe9124937146fa",
-    "url": "/edifly/static/js/main.4ebbbe37.chunk.js"
+    "revision": "6a3b7e3b6daf20532d9a",
+    "url": "/edifly/static/js/main.4dd9eb22.chunk.js"
   },
   {
     "revision": "9a2e6812531ad1cbadb1",
