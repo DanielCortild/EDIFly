@@ -1,12 +1,8 @@
-import React, {useState} from "react";
-
+import React from "react";
 import {UncontrolledCarousel} from 'reactstrap'
-
-import cx from 'classnames';
-
 import {BsChevronDoubleDown} from 'react-icons/bs';
-
 import styles from './S1_Header.module.css';
+import $ from 'jquery'
 
 const items = [
   {
@@ -19,28 +15,19 @@ const items = [
   }
 ];
 
-export default () => {
-
+export default ({data: {message}}) => {
   React.useEffect(() => {
-    const goDown = () => {
-      document.documentElement.scrollTop = window.innerHeight;
-    }
-    document.querySelector('#go_down').addEventListener('click', goDown);
+    const goDown = () => $(document).scrollTop(window.innerHeight);
+    $('#go_down').click(goDown);
   })
 
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-  // style={{backgroundImage: `url(/images/airport.jpg)`}}
   return (
     <section className="page-header" id="header">
 
       <UncontrolledCarousel className={styles.carouselStyle} items={items} />
       <div className="motto text-center position-absolute">
         <h1 className="font-weight-bold">EDIfly</h1>
-        <h3>Some Special Message</h3>
+        <h3>{message}</h3>
       </div>
       <div className="position-absolute motto" style={{bottom: '10px', cursor: 'pointer'}} id="go_down">
         <BsChevronDoubleDown size={32} />

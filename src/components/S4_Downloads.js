@@ -32,18 +32,18 @@ const DownloadModal = ({whitepaper, value, close}) => {
   )
 }
 
-export default () => {
+export default ({data: {downloads: {whitepapers}}}) => {
   const [modal, setModal] = useState();
   const [modalOpen, setModalOpen] = useState();
-  const [whitepapers, setWhitepapers] = useState();
+  // const [whitepapers, setWhitepapers] = useState();
 
-  useEffect(() => {
-    const fetch = async () => {
-      let {whitepapers} = await fetchDownloads();
-      setWhitepapers(whitepapers);
-    }
-    fetch();
-  }, []);
+  // useEffect(() => {
+  //   const fetch = async () => {
+  //     let {whitepapers} = await fetchDownloads();
+  //     setWhitepapers(whitepapers);
+  //   }
+  //   fetch();
+  // }, []);
 
   const openModal = (whitepaper) => {
     setModal(whitepaper)

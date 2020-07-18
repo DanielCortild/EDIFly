@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from './S7_Testimonials.module.css';
-import {fetchTestimonials} from '../api/';
 
 const responsive = {
   desktop: {breakpoint: { max: 4000, min: 640 }, items: 2},
@@ -21,19 +20,13 @@ const Testimonial = ({quote, author, from, date}) => {
 	)
 }
 
-export default () => {
-	const [Testimonials, setTestimonials] = React.useState([]);
-
-	React.useEffect(() => {
-		const fetch = async () => setTestimonials(await fetchTestimonials());
-		fetch();
-	}, []);
+export default ({data: {testimonials}}) => {
 
   return (
 		<section className="section section-gray" id="testimonials" style={{padding: '3em'}}>
 			<h2 className="title text-center">Testimonials</h2>
 			<Carousel responsive={responsive} showDots removeArrowOnDeviceType={['desktop', 'mobile']}>
-				{Object.keys(Testimonials).map(key => <Testimonial {...Testimonials[key]}></Testimonial>)}
+				{Object.keys(testimonials).map(key => <Testimonial {...testimonials[key]}></Testimonial>)}
 			</Carousel>
 		</section>
   )

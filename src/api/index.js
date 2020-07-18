@@ -2,7 +2,12 @@ import Axios from 'axios';
 import download from 'downloadjs';
 
 // const backServer = 'http://localhost:3000'
-const backServer = 'https://edifly-server.herokuapp.com/';
+const backServer = 'https://edifly.herokuapp.com/';
+
+export const fetchData = async () => {
+  let {data} = await Axios.get(`${backServer}/api`);
+  return(data);
+}
 
 export const fetchUsers = async () => {
   let {data} = await Axios.get(`${backServer}/users.json`);

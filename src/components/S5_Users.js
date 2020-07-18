@@ -1,11 +1,6 @@
 import React from 'react';
 import {Container, Row, Col, Modal} from 'reactstrap';
 
-import {fetchUsers} from '../api';
-import $ from 'jquery';
-
-const urlExists = url => $.ajax({type: 'HEAD', url, async: false}).status === 200;
-
 const UserModal = ({user: {name, desc, link, img_url}, close}) => {
   let open = true;
 
@@ -38,14 +33,8 @@ const UserModal = ({user: {name, desc, link, img_url}, close}) => {
   )
 }
 
-export default () => {
+export default ({data: {users}}) => {
   const [openModal, setOpenModal] = React.useState();
-  const [users, setUsers] = React.useState({});
-
-  React.useEffect(() => {
-    const fetch = async () => setUsers(await fetchUsers());
-    fetch();
-  }, []);
 
   return (
     <section className="section text-center" id="users">
