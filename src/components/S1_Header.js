@@ -10,11 +10,11 @@ import styles from './S1_Header.module.css';
 
 const items = [
   {
-    src: '/images/airport.jpg',
+    src: 'images/airport.jpg',
     key: '1'
   },
   {
-    src: '/images/cargo.jpg',
+    src: 'images/cargo.jpg',
     key: '2'
   }
 ];

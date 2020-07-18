@@ -27,7 +27,7 @@ export default () => {
 	React.useEffect(() => {
 		const fetch = async () => setTestimonials(await fetchTestimonials());
 		fetch();
-	})
+	}, []);
 
   return (
 		<section className="section section-gray" id="testimonials" style={{padding: '3em'}}>

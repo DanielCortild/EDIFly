@@ -7,13 +7,13 @@ const TeamMembers = {
     name: 'Richard Stokes',
     role: 'Chief Executive Officer',
     desc: 'A veteran in technology and aviation Richard has hands-on experience in bringing software and services to the global aviation community. He held senior positions at SITA, ICL etc.',
-    img_url: '/images/richard.jpeg'
+    img_url: 'images/richard.jpeg'
   },
   ingo: {
     name: 'Ingo Roessler',
     role: 'Chief Commercial Officer',
     desc: 'Ingo has ample experience in the air cargo arena. Helped shaping the business by supporting innovative developments like Cargospot, Optiontown, Aviaso etc.. Held senior positions at Lufthansa, Chapman Freeborn, Etihad Airways, Royal Jordanian Airlines, etc..',
-    img_url: '/images/ingo.jpeg'
+    img_url: 'images/ingo.jpeg'
   },
   anders: {
     name: 'Anders Jensen',
@@ -26,7 +26,7 @@ const TeamMember = ({name, role, desc, img_url}) => {
   return (
     <Col md="4">
       <Card className="card-profile card-plain">
-        <div className="card-avatar"><img alt="..." src={img_url ? img_url : '/images/empty_profile.jpg'} /></div>
+        <div className="card-avatar"><img alt="..." src={img_url ? img_url : 'images/empty_profile.jpg'} /></div>
         <CardBody>
           <div className="author">
             <CardTitle tag="h4">{name}</CardTitle>
