@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/EDIfly/static/css/main.260569a0.chunk.css",
-    "main.js": "/EDIfly/static/js/main.d87cdad3.chunk.js",
-    "main.js.map": "/EDIfly/static/js/main.d87cdad3.chunk.js.map",
+    "main.js": "/EDIfly/static/js/main.3f06b268.chunk.js",
+    "main.js.map": "/EDIfly/static/js/main.3f06b268.chunk.js.map",
     "runtime-main.js": "/EDIfly/static/js/runtime-main.af777bc0.js",
     "runtime-main.js.map": "/EDIfly/static/js/runtime-main.af777bc0.js.map",
     "static/css/2.eb1425ec.chunk.css": "/EDIfly/static/css/2.eb1425ec.chunk.css",
     "static/js/2.f0a85310.chunk.js": "/EDIfly/static/js/2.f0a85310.chunk.js",
     "static/js/2.f0a85310.chunk.js.map": "/EDIfly/static/js/2.f0a85310.chunk.js.map",
     "index.html": "/EDIfly/index.html",
-    "precache-manifest.c023cc4c42962f7c993c073668e50057.js": "/EDIfly/precache-manifest.c023cc4c42962f7c993c073668e50057.js",
+    "precache-manifest.01dbba3295ca3941ab27697d9416399d.js": "/EDIfly/precache-manifest.01dbba3295ca3941ab27697d9416399d.js",
     "service-worker.js": "/EDIfly/service-worker.js",
     "static/css/2.eb1425ec.chunk.css.map": "/EDIfly/static/css/2.eb1425ec.chunk.css.map",
     "static/css/main.260569a0.chunk.css.map": "/EDIfly/static/css/main.260569a0.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.eb1425ec.chunk.css",
     "static/js/2.f0a85310.chunk.js",
     "static/css/main.260569a0.chunk.css",
-    "static/js/main.d87cdad3.chunk.js"
+    "static/js/main.3f06b268.chunk.js"
   ]
 }
