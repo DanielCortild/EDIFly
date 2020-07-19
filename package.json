@@ -1,6 +1,6 @@
 {
   "name": "EDIfly",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "homepage": "https://danielcortild.github.io/EDIfly/",
   "private": true,
   "dependencies": {
