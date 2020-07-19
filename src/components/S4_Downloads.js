@@ -3,8 +3,8 @@ import {Container, Row, Col, Button, Modal, Input} from 'reactstrap';
 
 import {fetchDownloads, downloadFiles} from '../api/';
 
-const DownloadModal = ({whitepaper, value, close}) => {
-  let {title, filename, file_url} = whitepaper || {};
+const DownloadModal = ({file, value, close}) => {
+  let {title, filename, file_url} = file || {};
   const downloadFile = () => downloadFiles(filename, file_url);
   return (
     <div>
@@ -32,18 +32,9 @@ const DownloadModal = ({whitepaper, value, close}) => {
   )
 }
 
-export default ({data: {downloads: {whitepapers}}}) => {
+export default ({data: {downloads}}) => {
   const [modal, setModal] = useState();
   const [modalOpen, setModalOpen] = useState();
-  // const [whitepapers, setWhitepapers] = useState();
-
-  // useEffect(() => {
-  //   const fetch = async () => {
-  //     let {whitepapers} = await fetchDownloads();
-  //     setWhitepapers(whitepapers);
-  //   }
-  //   fetch();
-  // }, []);
 
   const openModal = (whitepaper) => {
     setModal(whitepaper)
@@ -59,20 +50,20 @@ export default ({data: {downloads: {whitepapers}}}) => {
       <Container className="text-center">
         <h2 className="title mb-5">White Papers & Project Briefing</h2>
         <Row>
-          <Col xs={12} md={4}>
-            <h4>Project Briefing</h4> <br />
-            <div className="my-button" onClick={() => openModal()}>Product Briefing</div>
-          </Col>
-          <Col xs={12} md={{size: 7, offset: 1}}>
-            <h4>White Papers</h4> <br />
-            <Row>
-              {whitepapers ? whitepapers.map((whitepaper, index) => (
-                <Col xs={12} md={6} key={index}>
-                  <div className="my-button" onClick={() => openModal(whitepaper)}>{whitepaper.title}</div>
-                </Col>
-              )) : ''}
-            </Row>
-          </Col>
+
+          {downloads ? Object.keys(downloads).map(key => {
+            let files = downloads[key];
+            return (
+              <Col xs={12} md={4}>
+                <h4>{key}</h4> <br />
+                  {files.map((file, index) => (
+                    <p onClick={() => openModal(file)} className="text-left" key={index} style={{transform: 'rotate(0)'}}>
+                      <a href="#download" className="stretched-link">{file.title}</a>
+                    </p>
+                  ))}
+              </Col>)
+          }) : ''}
+
         </Row>
       </Container>
     </section>

@@ -26,9 +26,8 @@ export default () => {
       <NavBar />
       <Header data={data} />
       <Description data={data} />
-      <Description2 data={data} />
-      <Team data={data} />
       <Downloads data={data} />
+      <Team data={data} />
       <Users data={data} />
       <Testimonals data={data} />
       <Contact data={data} />
@@ -38,12 +37,12 @@ export default () => {
   );
   return(
     <>
-    <div style={{height: '100vh'}} className="w-100 d-flex justify-content-center align-items-center">
+    {/* <div style={{height: '100vh'}} className="w-100 d-flex justify-content-center align-items-center">
       <div>
         <h1 className="dispaly-4">Error 500 - Server Down</h1>
         <h3 className="dispaly-2">To start the server, please visit <a href="https://edifly.herokuapp.com/" target="_blank">the server</a> </h3>
       </div>
-    </div>
+    </div> */}
     </>
   )
 }

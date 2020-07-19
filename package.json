@@ -1,7 +1,7 @@
 {
   "name": "EDIfly",
-  "version": "0.2.5",
-  "homepage": "https://danielcortild.github.io/EDIfly",
+  "version": "0.2.6",
+  "homepage": "https://danielcortild.github.io/EDIfly/",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
