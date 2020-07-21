@@ -5,7 +5,7 @@ import cx from "classnames";
 
 import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
-const NavbarItems = ['description', 'team', 'download', 'users', 'contact '];
+const NavbarItems = ['description', 'support', 'team', 'users', 'contact '];
 
 export default () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -58,7 +58,7 @@ export default () => {
             {NavbarItems.map(key => (
               <NavItem>
                 <NavLink>
-                  <a href={`/#${key}`} style={linkStyle(navbarColor, key)}>
+                  <a href={`#${key}`} style={linkStyle(navbarColor, key)}>
                     {key}
                   </a>
                 </NavLink>

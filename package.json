@@ -4,6 +4,7 @@
   "homepage": "https://danielcortild.github.io/EDIfly/",
   "private": true,
   "dependencies": {
+    "availity-reactstrap-validation": "^2.6.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "classnames": "2.2.6",
@@ -11,8 +12,8 @@
     "jquery": "^3.5.1",
     "node-sass": "4.14.1",
     "paper-kit-2": "^2.1.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-multi-carousel": "^2.5.5",
     "react-router": "5.2.0",

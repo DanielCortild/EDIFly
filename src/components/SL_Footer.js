@@ -21,12 +21,6 @@ export default () => {
           <a href="https://www.linkedin.com/company/innovative-software/" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin size={24} className="social-media mr-3" style={socialMedia} />
           </a>
-          <a href="/" target="_blank" rel="noopener noreferrer">
-            <AiFillFacebook size={24} className="social-media mr-3" style={socialMedia} />
-          </a>
-          <a href="/" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={22} className="social-media mr-3" style={socialMedia} />
-          </a>
         </div>
         <span className="copyright">
           © 2020, EDIfly

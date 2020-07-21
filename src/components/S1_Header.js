@@ -24,7 +24,7 @@ export default ({data: {message}}) => {
   return (
     <section className="page-header" id="header">
 
-      <UncontrolledCarousel className={styles.carouselStyle} items={items} />
+      <UncontrolledCarousel className={styles.carouselStyle} items={items} captionText="" />
       <div className="motto text-center position-absolute">
         <h1 className="font-weight-bold">EDIfly</h1>
         <h3>{message}</h3>
