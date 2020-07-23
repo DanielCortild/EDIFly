@@ -1,9 +1,8 @@
 import Axios from 'axios';
 import download from 'downloadjs';
 
-const backServer = 'http://localhost:3000'
-// const backServer = 'https://edifly.herokuapp.com';
-// const backServer = 'https://no.com';
+const backServer = process.env.NODE_ENV === 'development' ? 
+  'http://localhost:3000' : 'https://edifly.herokuapp.com';
 
 export const fetchData = async () => {
   let {data} = await Axios.get(`${backServer}/api`);
