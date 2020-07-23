@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8ac0f87f0166357ab3a5485668862a5",
+    "revision": "34ff642a3bf8593b3ad75342c084255e",
     "url": "/EDIfly/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EDIfly/static/css/2.eb1425ec.chunk.css"
   },
   {
-    "revision": "b615049bd8099412a52f",
+    "revision": "79026ffb815c1fc4b0c0",
     "url": "/EDIfly/static/css/main.260569a0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/EDIfly/static/js/2.34633403.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b615049bd8099412a52f",
-    "url": "/EDIfly/static/js/main.b5aa88e3.chunk.js"
+    "revision": "79026ffb815c1fc4b0c0",
+    "url": "/EDIfly/static/js/main.94f8381a.chunk.js"
   },
   {
     "revision": "88954c6828a5aaf41fb4",
