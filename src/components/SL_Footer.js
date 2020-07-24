@@ -21,6 +21,12 @@ export default () => {
           <a href="https://www.linkedin.com/company/innovative-software/" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin size={24} className="social-media mr-3" style={socialMedia} />
           </a>
+          {/* <div>
+            <strong>Innovative Software SARL</strong>
+            <p>27, cité Holleschberg</p>
+            <p>L-5831 Hesperange</p>
+            <p>Luxembourg</p>
+          </div> */}
         </div>
         <span className="copyright">
           © 2020, EDIfly

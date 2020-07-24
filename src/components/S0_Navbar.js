@@ -5,7 +5,7 @@ import cx from "classnames";
 
 import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
-const NavbarItems = ['description', 'support', 'team', 'users', 'contact '];
+const NavbarItems = ['description', 'support', 'team', 'users', 'contact'];
 
 export default () => {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -18,7 +18,11 @@ export default () => {
   };
 
   const linkStyle = (navbarColor, sectionID) => {return {
-    color: navbarColor === "" ? (activeSection === sectionID ? '#000000' : '#66615B') : (window.innerWidth >= 992 ? '#FFFFFF' : '#000000'),
+    color: navbarColor === "" ? 
+      (activeSection === sectionID || 
+        (activeSection === "testimonials" && sectionID === "users") 
+        ? '#000000' : '#66615B') : 
+      (window.innerWidth >= 992 ? '#FFFFFF' : '#000000'),
     fontWeight: '600'
   }};
 
@@ -42,7 +46,9 @@ export default () => {
     <Navbar className={cx("fixed-top", navbarColor)} expand="lg" id="navbar">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand href="#">EDIfly</NavbarBrand>
+          <NavbarBrand href="#" className="p-0 pl-2 pl-md-0">
+            <img src="./images/logo.png" alt="EDIfly" style={{height: '50px '}}/>
+          </NavbarBrand>
           <button className={cx("navbar-toggle navbar-toggler float-right", {
                     toggled: navbarCollapse,
                   })}
