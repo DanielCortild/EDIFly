@@ -6,6 +6,7 @@ import {postMessage} from '../api/';
 export default () => {  
   const [messageSent, setMessageSent] = React.useState(false);
   const handleValidSubmit = (_, values) => {
+    values.concerning = values.concerning ? values.concerning : "Offers, New Business, Partnerships";
     postMessage(values);
     setMessageSent(true);
   }
@@ -21,7 +22,7 @@ export default () => {
               <Row>
                 <Col lg="6">
                   <label>Name</label>
-                  <AvInput placeholder="John Doe" type="text" name="name" />
+                  <AvInput placeholder="John Doe" type="text" name="name" required />
                 </Col>
                 <Col lg="6">
                   <label>Company</label>
@@ -29,7 +30,7 @@ export default () => {
                 </Col>
                 <Col lg="6">
                   <label>Email Address</label>
-                  <AvInput placeholder="john.doe@example.com" type="email" name="email" />
+                  <AvInput placeholder="john.doe@example.com" type="email" name="email" required />
                 </Col>
                 <Col lg="6">
                   <label>Concerning</label>
@@ -41,7 +42,7 @@ export default () => {
                 </Col>
               </Row>
               <label>Message</label>
-              <AvInput placeholder="Message" type="textarea" rows="4" name="message" />
+              <AvInput placeholder="Message" type="textarea" rows="4" name="message" required />
               <Row className="justify-content-center">
                 <Col xs="6" md="4">
                   <Button color="success" size="lg" type="submit">Send Message</Button>
