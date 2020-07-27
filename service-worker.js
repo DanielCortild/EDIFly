@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/EDIfly/precache-manifest.1b0c0208dba2551314f8208731613f2d.js"
+  "/EDIfly/precache-manifest.9a4d98b556c25fda63503df703e513c1.js"
 );
 
 self.addEventListener('message', (event) => {
