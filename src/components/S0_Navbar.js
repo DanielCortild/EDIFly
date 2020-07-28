@@ -6,6 +6,7 @@ import cx from "classnames";
 import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
 const NavbarItems = [
+  ['blog', 'Blog'],
   ['description', 'Why EDIfly?'], 
   ['support', 'Support'],
   ['team', 'Team'],

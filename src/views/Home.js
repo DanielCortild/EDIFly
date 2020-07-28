@@ -11,6 +11,7 @@ import Support from 'components/S4_Support.js';
 import Users from 'components/S5_Users.js';
 import Contact from 'components/S6_Contact.js';
 import Testimonals from 'components/S7_Testimonials.js';
+import Blog from 'components/S8_Blog.js';
 import Footer from "components/SL_Footer.js";
 
 import {fetchData} from '../api/';
@@ -25,6 +26,7 @@ export default () => {
     <> 
       <NavBar />
       <Header data={data} />
+      <Blog data={data} />
       <Description data={data} />
       <Support data={data} />
       <Team data={data} />

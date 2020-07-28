@@ -1,0 +1,26 @@
+/* post Slider */
+
+.post {
+  margin: 0 10px 0;
+  background: #fff;
+  padding: 20px 20px 2em 20px;
+  border: none;
+  border-radius: 7px;
+  color: #1e528e;
+ }
+ .post h4 {
+  padding-bottom: 8px;
+  margin-top: 0px;
+  font-size: 1.25em;
+  color:#000;
+ }
+
+ .post p {
+  font-size: 1em;
+ }
+
+ .post i {
+  font-size: 0.9em;
+  float: right;
+  margin-bottom: 1em;
+ }
