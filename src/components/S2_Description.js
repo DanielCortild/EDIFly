@@ -37,7 +37,8 @@ export default () => {
               airlines, ground handlers, system providers, trucking, authorities, etc. to securely
               exchange operational messages for free. EDIfly provides banking-like data security,
               superior rule-based message routing and monitoring based on IATA standards - up to 75%
-              cost reduction.
+              cost reduction. 
+              Custom-tailored solutions have been delivered significant value in multiple sectors of the industry the world over.
             </h5>
           </Col>
         </Row>
@@ -47,16 +48,16 @@ export default () => {
             elements={["Highly Scalable from 10-2000 Messages per second", 
                         "Standard Software and Hardware components",
                         "PCI/DSS and GDPR compliant",
-                        "End-to-end encryption"]} />
+                        "End-to-end encryption",
+                        "Rule-based routing, smart re-broadcast of messages"]} />
           <DescriptionItem icon={<FaMoneyBillWaveAlt />} title="75% Savings"
-            elements={["Unlimited free exchanges between users of EDIfly",
+            elements={["Unlimited free exchanges between EDIfly users",
                       "Lean infrastructure, high-availability switching without mainframe computing",
-                      "Replace managed direct links through self-managed EDIfly recipient license",
-                      "Rule-based routing, smart re-broadcast of messages"]} />
+                      "Replace direct links through self-managed EDIfly technology"]} />
           <DescriptionItem icon={<BsPersonFill />} title="Management"
             elements={["Seamless integration based on existing IATA standards and addresses",
                       "Unique Concept to secure Data and Data Exchanges"]} />
-          <DescriptionItem icon={<GoCircuitBoard />} title="Legacy Circuits"
+          <DescriptionItem icon={<GoCircuitBoard />} title="Replaces Legacy!"
             elements={["Free Type B, Type X Exchanges"]} />
         </Row>
       </Container>

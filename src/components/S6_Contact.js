@@ -13,7 +13,7 @@ export default () => {
 
   return (
     <section className="section section-light" id="contact">
-      <h2 className="text-center">Get in touch?</h2>
+      <h2 className="text-center">Contact the EDIfly team!</h2>
       {!messageSent ? 
       <Container className="px-3">
         <Row>
@@ -35,13 +35,14 @@ export default () => {
                 <Col lg="6">
                   <label>Concerning</label>
                   <AvField type="select" name="concerning">
+                    <option>Try B4 You Buy</option>
                     <option>Offers, New Business, Partnerships</option>
                     <option>Media Enquiries</option>
                     <option>Support/Customer Service Enquiries</option>
                   </AvField>
                 </Col>
               </Row>
-              <label>Message</label>
+              <label>How can we help you to create value with EDIfly?</label>
               <AvInput placeholder="Message" type="textarea" rows="4" name="message" required />
               <Row className="justify-content-center">
                 <Col xs="6" md="4">

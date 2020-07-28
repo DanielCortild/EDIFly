@@ -38,7 +38,7 @@ export default ({data: {users}}) => {
 
   return (
     <section className="section text-center" id="users">
-      <h2 className="title">Our Current Users</h2>
+      <h2 className="title">Global User Community</h2>
       <Container>
         <Row className="pl-4">
 

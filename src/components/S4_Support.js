@@ -65,7 +65,7 @@ export default ({data: {downloads}}) => {
       <DownloadModal value={modalOpen} close={closeModal} file={modal} />
 
       <Container className="text-center">
-        <h2 className="title mb-5">EDIfly Support</h2>
+        <h2 className="title mb-5">EDIfly Solution Support</h2>
         <Row>
 
           {downloads ? Object.keys(downloads).map(key => {
