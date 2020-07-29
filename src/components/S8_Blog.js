@@ -19,10 +19,9 @@ const BlogPost = ({title, content, date}) => {
 }
 
 export default ({data: {blog}}) => {
-
   return (
-		<section className="section section-gray" id="blog" style={{padding: '3em'}}>
-			<h2 className="title text-center mb-4">Recent Blog Posts</h2>
+		<section className="section section-gray px-5" id="blog" style={{padding: '3em'}} style={{background: '#764a81'}}>
+			<h2 className="title text-center mb-4" style={{color: 'white'}}>Recent Blog Posts</h2>
 			<Carousel responsive={responsive} showDots removeArrowOnDeviceType={['desktop', 'mobile']}>
 				{Object.keys(blog).map(key => <BlogPost {...blog[key]} />)}
 			</Carousel>

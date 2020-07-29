@@ -60,12 +60,12 @@ export default ({data: {downloads}}) => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <section className="section section-gray" id="support">
+    <section className="section section-gray" id="support" style={{background: '#7cb3d8', color: 'white'}}>
 
       <DownloadModal value={modalOpen} close={closeModal} file={modal} />
 
       <Container className="text-center">
-        <h2 className="title mb-5">EDIfly Solution Support</h2>
+        <h2 className="title mb-5" style={{color: 'white'}}>EDIfly Solution Support</h2>
         <Row>
 
           {downloads ? Object.keys(downloads).map(key => {
@@ -75,7 +75,7 @@ export default ({data: {downloads}}) => {
                 <h4>{key}</h4> <br />
                   {files.map((file, index) => (
                     <p onClick={() => openModal(file)} className="text-left" key={index} style={{transform: 'rotate(0)'}}>
-                      <a href="#support" className="stretched-link">{file.title}</a>
+                      <a href="#support" className="stretched-link" style={{color: 'white'}}>{file.title}</a>
                     </p>
                   ))}
               </Col>)

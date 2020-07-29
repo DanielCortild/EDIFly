@@ -26,9 +26,9 @@ export default () => {
     <> 
       <NavBar />
       <Header data={data} />
-      <Blog data={data} />
       <Description data={data} />
       <Support data={data} />
+      <Blog data={data} />
       <Team data={data} />
       <Users data={data} />
       <Testimonals data={data} />
