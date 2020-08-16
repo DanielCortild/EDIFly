@@ -8,6 +8,7 @@ import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "r
 const NavbarItems = [
   ['description', 'Why EDIfly?'], 
   ['support', 'Support'],
+  ['news', 'News'],
   ['blog', 'Blog'],
   ['team', 'Team'],
   ['users', 'Users'],
@@ -29,7 +30,7 @@ export default () => {
       (activeSection === sectionID || 
         (activeSection === "testimonials" && sectionID === "users") 
         ? '#000000' : '#66615B') : 
-      (window.innerWidth >= 992 ? '#FFFFFF' : '#000000'),
+      (window.innerWidth >= 992 ? '#000' : '#000'),
     fontWeight: '600'
   }};
 
@@ -53,17 +54,19 @@ export default () => {
     <Navbar className={cx("fixed-top", navbarColor)} expand="lg" id="navbar">
       <Container>
         <div className="navbar-translate">
+          {$(document).scrollTop() > window.innerHeight ?
           <NavbarBrand href="#" className="p-0 pl-2 pl-md-0">
             <img src="./images/logo.png" alt="EDIfly" style={{height: '50px '}}/>
-          </NavbarBrand>
+          </NavbarBrand> : ''}
           <button className={cx("navbar-toggle navbar-toggler float-right", {
                     toggled: navbarCollapse,
                   })}
                   onClick={toggleNavbarCollapse}
+                  style={{color: '#FFF !important'}}
           >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
+            <span className="navbar-toggler-bar bar1" style={{background: '#66615B'}}/>
+            <span className="navbar-toggler-bar bar2" style={{background: '#66615B'}} />
+            <span className="navbar-toggler-bar bar3" style={{background: '#66615B'}} />
           </button>
         </div>
         <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>

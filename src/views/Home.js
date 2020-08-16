@@ -8,6 +8,7 @@ import Description from 'components/S2_Description.js';
 import Description2 from 'components/S2_Description2.js';
 import Team from 'components/S3_Team.js';
 import Support from 'components/S4_Support.js';
+import News from 'components/S4_News.js';
 import Users from 'components/S5_Users.js';
 import Contact from 'components/S6_Contact.js';
 import Testimonals from 'components/S7_Testimonials.js';
@@ -28,6 +29,7 @@ export default () => {
       <Header data={data} />
       <Description data={data} />
       <Support data={data} />
+      <News data={data} />
       <Blog data={data} />
       <Team data={data} />
       <Users data={data} />

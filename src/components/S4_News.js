@@ -49,37 +49,34 @@ const DownloadModal = ({file, value, close}) => {
   )
 }
 
-export default ({data: {downloads}}) => {
+export default ({data: {news}}) => {
   const [modal, setModal] = useState();
   const [modalOpen, setModalOpen] = useState();
 
-  const openModal = (whitepaper) => {
-    setModal(whitepaper)
+  console.log(news)
+
+  const openModal = (file) => {
+    setModal(file)
     setModalOpen(true)
   }
   const closeModal = () => setModalOpen(false);
 
   return (
-    <section className="section px-3 px-md-0" id="support" style={{background: '#7cb3d8', color: 'white'}}>
+    <section className="section px-3 px-md-0" id="news">
 
       <DownloadModal value={modalOpen} close={closeModal} file={modal} />
 
       <Container className="text-center">
-        <h2 className="title mb-5" style={{color: 'white'}}>EDIfly Solution Support</h2>
+        <h2 className="title mb-5">EDIfly News</h2>
         <Row>
-
-          {downloads ? Object.keys(downloads).map(key => {
-            let files = downloads[key];
-            return (
-              <Col xs={12} md={4} key={key}>
-                <h4 className="text-left">{key}</h4> <br />
-                  {files.map((file, index) => (
-                    <p onClick={() => openModal(file)} className="text-left" key={index} style={{transform: 'rotate(0)'}}>
-                      <a href="#support" className="stretched-link" style={{color: 'white'}}>{file.title}</a>
-                    </p>
-                  ))}
-              </Col>)
-          }) : ''}
+            {news ? news.map((file, key) => {
+              return (
+                <Col xs={12} md={4}>
+                  <p onClick={() => openModal(file)} className="text-left" key={key} style={{transform: 'rotate(0)'}}>
+                    <a href="#news" className="stretched-link">{file.title}</a>
+                  </p>          
+                </Col>)
+            }) : ''}
 
         </Row>
       </Container>

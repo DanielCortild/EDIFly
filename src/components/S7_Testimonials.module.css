@@ -1,5 +1,9 @@
 /* Bubble Slider */
 
+.bubble {
+  margin-bottom: 2.5em;
+}
+
 .bubble blockquote {
  margin: 10px 10px 0;
  background: #fff;
