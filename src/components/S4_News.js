@@ -53,7 +53,9 @@ export default ({data: {news}}) => {
   const [modal, setModal] = useState();
   const [modalOpen, setModalOpen] = useState();
 
-  console.log(news)
+  const directDownloadFiles = file => {
+    downloadFiles(file.filename, file.file_url);
+  }
 
   const openModal = (file) => {
     setModal(file)
@@ -72,7 +74,7 @@ export default ({data: {news}}) => {
             {news ? news.map((file, key) => {
               return (
                 <Col xs={12} md={4}>
-                  <p onClick={() => openModal(file)} className="text-left" key={key} style={{transform: 'rotate(0)'}}>
+                  <p onClick={() => directDownloadFiles(file)} className="text-left" key={key} style={{transform: 'rotate(0)'}}>
                     <a href="#news" className="stretched-link">{file.title}</a>
                   </p>          
                 </Col>)

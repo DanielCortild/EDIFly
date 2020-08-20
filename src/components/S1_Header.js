@@ -25,7 +25,8 @@ export default ({data: {message}}) => {
     <section className="" id="header" style={{minHeight: '100vh !important', background: 'url("images/back_grey.png") center center / cover no-repeat'}}>
 
       <div className="d-flex flex-column justify-content-center" style={{background: 'rgba(255, 255, 255, 0.8)', height: '100vh', width: '100%', textAlign: 'center'}}>
-        <img src="images/back.png" className="mx-auto" style={{filter: 'none !important', maxWidth: '86%', maxHeight: '86%'}}/>
+        <img src="images/back3.png" className="mx-auto" style={{filter: 'none !important', maxWidth: '98%', maxHeight: '80%'}}/>
+        <h3>{message}</h3>
       </div>
 
       {/* <div style={{background: 'url(images/back.png)', height: '100%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}></div> */}
