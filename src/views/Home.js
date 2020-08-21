@@ -2,17 +2,15 @@ import React from "react";
 
 import TopButton from 'components/TopButton.js';
 
-import NavBar from "components/S0_Navbar.js";
-import Header from "components/S1_Header.js";
-import Description from 'components/S2_Description.js';
-import Description2 from 'components/S2_Description2.js';
-import Team from 'components/S3_Team.js';
-import Support from 'components/S4_Support.js';
-import News from 'components/S4_News.js';
-import Users from 'components/S5_Users.js';
-import Contact from 'components/S6_Contact.js';
-import Testimonals from 'components/S7_Testimonials.js';
-import Blog from 'components/S8_Blog.js';
+import NavBar from "components/S*_Navbar.js";
+import Header from "components/S0_Header.js";
+import WhyEDIfly from 'components/S1_WhyEDIfly.js';
+import Users from 'components/S2_Users.js';
+import Support from 'components/S3_Support.js';
+import Team from 'components/S4_Team.js';
+import News from 'components/S5_News.js';
+import Blog from 'components/S6_Blog.js';
+import Contact from 'components/S7_Contact.js';
 import Footer from "components/SL_Footer.js";
 
 import {fetchData} from '../api/';
@@ -23,30 +21,19 @@ export default () => {
     const fetch = async () => setData(await fetchData());
     fetch();
   }, []);
-  if(data) return (
+  return (
     <> 
       <NavBar />
       <Header data={data} />
-      <Description data={data} />
+      <WhyEDIfly data={data} />
+      <Users data={data} />
       <Support data={data} />
+      <Team data={data} />
       <News data={data} />
       <Blog data={data} />
-      <Team data={data} />
-      <Users data={data} />
-      <Testimonals data={data} />
       <Contact data={data} />
       <TopButton />
       <Footer /> 
     </>
   );
-  return(
-    <>
-    {/* <div style={{height: '100vh'}} className="w-100 d-flex justify-content-center align-items-center">
-      <div>
-        <h1 className="dispaly-4">Error 500 - Server Down</h1>
-        <h3 className="dispaly-2">To start the server, please visit <a href="https://edifly.herokuapp.com/" target="_blank">the server</a> </h3>
-      </div>
-    </div> */}
-    </>
-  )
 }

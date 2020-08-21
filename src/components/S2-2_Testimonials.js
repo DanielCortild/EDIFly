@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import styles from './S7_Testimonials.module.css';
+import styles from './S2-2_Testimonials.module.css';
 
 const responsive = {
   desktop: {breakpoint: { max: 4000, min: 640 }, items: 2},

@@ -6,12 +6,12 @@ import cx from "classnames";
 import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
 
 const NavbarItems = [
-  ['description', 'Why EDIfly?'], 
+  ['whyedifly', 'Why EDIfly?'], 
+  ['users', 'Users'],
   ['support', 'Support'],
+  ['team', 'Team'],
   ['news', 'News'],
   ['blog', 'Blog'],
-  ['team', 'Team'],
-  ['users', 'Users'],
   ['contact', 'Contact']
 ];
 

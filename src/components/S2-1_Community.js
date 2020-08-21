@@ -20,7 +20,7 @@ const UserModal = ({user: {name, desc, link, img_url}, close}) => {
       <div className="modal-body">
         <Row>
           <Col sm={6} lg={4}>
-            <img src={img_url ? img_url : 'images/empty_user.jpeg'} alt={name} className="w-100 img-thumbnail"/>
+            <img src={img_url} alt={name} className="w-100 img-thumbnail"/>
           </Col>
           <Col sm={6} lg={8}>
             {desc}
@@ -48,7 +48,7 @@ export default ({data: {users}}) => {
             return (
               <Col xs={6} sm={4} md={3} lg={2} className="p-4 mx-auto" key={key}>
                 <Row className="img-thumbnail h-100 align-items-center">
-                  <img src={img_url ? img_url : 'images/empty_user.jpeg'} alt={name} className="w-100" onClick={toggle} style={{cursor: 'pointer'}} />
+                  <img src={img_url} alt={name} className="w-100" onClick={toggle} style={{cursor: 'pointer'}} />
                 </Row>
               </Col>
             )

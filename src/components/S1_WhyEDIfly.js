@@ -23,10 +23,9 @@ const DescriptionItem = ({icon, title, elements}) => {
   )
 }
 
-
 export default () => {
   return (
-    <section className="section text-center" id="description">
+    <section className="section text-center" id="whyedifly">
       <Container>
         <Row>
           <Col className="ml-auto mr-auto" xs="12" sm="10" md="8">
@@ -38,7 +37,9 @@ export default () => {
               exchange operational messages for free. EDIfly provides banking-like data security,
               superior rule-based message routing and monitoring based on IATA standards - up to 75%
               cost reduction. 
-              Custom-tailored solutions have been delivered significant value in multiple sectors of the industry the world over.
+              Custom-tailored solutions have delivered significant value in multiple sectors of the aviation industry the world over.
+              <br /> 
+              Join a fast growing community.
             </h5>
           </Col>
         </Row>
@@ -53,12 +54,18 @@ export default () => {
           <DescriptionItem icon={<FaMoneyBillWaveAlt />} title="75% Savings"
             elements={["Unlimited free exchanges between EDIfly users",
                       "Lean infrastructure, high-availability switching without mainframe computing",
-                      "Replace direct links through self-managed EDIfly technology"]} />
+                      "Replace direct links through self-managed EDIfly technology",
+                      "Works for the entire aviation industry and partners"]} />
           <DescriptionItem icon={<BsPersonFill />} title="Management"
             elements={["Seamless integration based on existing IATA standards and addresses",
-                      "Unique Concept to secure Data and Data Exchanges"]} />
+                      "Unique Concept to secure Data and Data Exchanges",
+                      "EDIfly team provides free analyses of traffic pattern",
+                      "Distributed ressources create resilliant infrastructure"]} />
           <DescriptionItem icon={<GoCircuitBoard />} title="Replaces Legacy!"
-            elements={["Free Type B, Type X Exchanges"]} />
+            elements={["Free Type B, Type X Exchanges",
+                      "Discard proprietary Type B gateways and clients",
+                      "Handles current and future messaging standards",
+                      "Connect partners without legacy circuits"]} />
         </Row>
       </Container>
     </section>
