@@ -21,19 +21,25 @@ export default () => {
     const fetch = async () => setData(await fetchData());
     fetch();
   }, []);
-  return (
-    <> 
-      <NavBar />
-      <Header data={data} />
-      <WhyEDIfly data={data} />
-      <Users data={data} />
-      <Support data={data} />
-      <Team data={data} />
-      <News data={data} />
-      <Blog data={data} />
-      <Contact data={data} />
-      <TopButton />
-      <Footer /> 
-    </>
-  );
+  if(data) {
+    return (
+      <> 
+        <NavBar />
+        <Header data={data} />
+        <WhyEDIfly data={data} />
+        <Users data={data} />
+        <Support data={data} />
+        <Team data={data} />
+        <News data={data} />
+        <Blog data={data} />
+        <Contact data={data} />
+        <TopButton />
+        <Footer /> 
+      </>
+    );
+  } else {
+    return (
+      <></>
+    )
+  }
 }

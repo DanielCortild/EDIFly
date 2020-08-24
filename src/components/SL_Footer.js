@@ -32,7 +32,7 @@ export default () => {
           </div> */}
         </div>
         <span className="copyright">
-          © 2020, EDIfly
+          © 2020, Innovative Software SARL
         </span>
       </div>
     </footer>

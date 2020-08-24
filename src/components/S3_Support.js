@@ -5,6 +5,7 @@ import {downloadFiles, postDownloadedFile} from '../api';
 
 const DownloadModal = ({file, value, close}) => {
   let {title, filename, file_url} = file || {};
+  console.log(file_url);
   const handleValidSubmit = async (event, values) => {
     postDownloadedFile({
       name: values.name,
