@@ -1,7 +1,7 @@
 {
   "name": "EDIfly",
   "version": "0.3.0",
-  "homepage": "https://danielcortild.github.io/EDIfly/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "availity-reactstrap-validation": "^2.6.1",
