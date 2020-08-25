@@ -21,7 +21,6 @@ const Testimonial = ({quote, author, from, date}) => {
 }
 
 export default ({data: {testimonials}}) => {
-
   return (
 		<section className="section section-gray p-5" id="testimonials" style={{background: '#8482af'}}>
 			<h2 className="title text-center my-3" style={{color: 'white'}}>Testimonials</h2>

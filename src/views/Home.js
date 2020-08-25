@@ -21,25 +21,20 @@ export default () => {
     const fetch = async () => setData(await fetchData());
     fetch();
   }, []);
-  if(data) {
-    return (
-      <> 
-        <NavBar />
-        <Header data={data} />
-        <WhyEDIfly data={data} />
-        <Users data={data} />
-        <Support data={data} />
-        <Team data={data} />
-        <News data={data} />
-        <Blog data={data} />
-        <Contact data={data} />
-        <TopButton />
-        <Footer /> 
-      </>
-    );
-  } else {
-    return (
-      <></>
-    )
-  }
+  let complete_data = data || {'message': "", 'users': [], 'testimonials': [], 'blog': [], 'downloads': {'Product Briefing': [], 'Whitepapers': [], 'FAQ + Case Studies': []}, 'news': [ ]}
+  return (
+    <> 
+      <NavBar />
+      <Header data={complete_data} />
+      <WhyEDIfly data={complete_data} />
+      <Users data={complete_data} />
+      <Support data={complete_data} />
+      <Team data={complete_data} />
+      <News data={complete_data} />
+      <Blog data={complete_data} />
+      <Contact data={complete_data} />
+      <TopButton />
+      <Footer /> 
+    </>
+  );
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import {Card, CardBody, CardTitle, Container, Row, Col} from "reactstrap";
-import {fetchTeamMembers} from '../api';
 
 const TeamMembers = {
   richard: {
@@ -41,7 +40,6 @@ const TeamMember = ({name, role, desc, img_url}) => {
 }
 
 export default () => {
-
   return(
     <section className="section section-dark text-center" id="team">
       <Container>

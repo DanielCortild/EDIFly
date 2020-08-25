@@ -1,7 +1,7 @@
 import React from "react";
 import $ from 'jquery';
 
-import {AiFillLinkedin, AiFillFacebook} from 'react-icons/ai';
+import {AiFillLinkedin} from 'react-icons/ai';
 import {FaTwitter} from 'react-icons/fa';
 
 export default () => {
@@ -24,12 +24,6 @@ export default () => {
           <a href="https://twitter.com/EDIflyMessaging" target="_blank" rel="noopener noreferrer">
             <FaTwitter size={24} className="social-media mr-3" style={socialMedia} />
           </a>
-          {/* <div>
-            <strong>Innovative Software SARL</strong>
-            <p>27, cité Holleschberg</p>
-            <p>L-5831 Hesperange</p>
-            <p>Luxembourg</p>
-          </div> */}
         </div>
         <span className="copyright">
           © 2020, Innovative Software SARL

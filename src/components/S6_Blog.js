@@ -11,7 +11,7 @@ const responsive = {
 const BlogPost = ({title, content, date}) => {
 	return (
 		<div className={styles.post}>
-			<h4> {title}</h4>
+			<h4>{title}</h4>
 			<p>{content}</p>
       <i>{date}</i>
 		</div>
