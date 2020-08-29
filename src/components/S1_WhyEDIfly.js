@@ -31,15 +31,15 @@ export default () => {
           <Col className="ml-auto mr-auto" xs="12" sm="10" md="8">
             <h2 className="title">Your Plan B to Legacy Aviation Messaging</h2>
             <h5 className="description text-muted">
-              EDIfly is the signature tool of Innovative Software for seamless integrated messaging
-              in aviation &amp; logistics. Since 2010 this high-performance message broker enables
-              airlines, ground handlers, system providers, trucking, authorities, etc. to securely
-              exchange operational messages for free. EDIfly provides banking-like data security,
-              superior rule-based message routing and monitoring based on IATA standards - up to 75%
-              cost reduction. 
-              Custom-tailored solutions have delivered significant value in multiple sectors of the aviation industry the world over.
-              <br /> 
-              Join a fast growing community.
+            EDIfly is the signature tool of Innovative Software for seamless integrated messaging in aviation &amp; logistics since 2010.
+            <br /> <br />
+            This high-performance message broker enables airlines, ground handlers, passenger + cargo system providers, trucking, authorities, etc. to securely exchange operational messages without volume-related charging + complete tracking.
+            <br /> <br />
+            EDIfly provides banking-like data security, superior rule-based message routing + monitoring based on IATA standards – with up to 75% cost reduction. Custom-tailored solutions have delivered significant value + unrivalled reliability of service in multiple sectors of the aviation industry the world over.
+            <br /> <br />
+            No changes to applications. Use existing addresses.
+            <br /> <br />
+            <b>Join a fast growing community. Free trials.</b>
             </h5>
           </Col>
         </Row>
