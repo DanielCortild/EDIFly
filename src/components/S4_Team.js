@@ -5,19 +5,19 @@ const TeamMembers = {
   richard: {
     name: 'Richard Stokes',
     role: 'Chief Executive Officer',
-    desc: 'A veteran in technology &amp; aviation Richard has hands-on experience in bringing software &amp; services to the global aviation community. Senior positions at SITA, ICL, Travel Innovation Partners, etc.',
+    desc: 'A veteran in technology & aviation Richard has hands-on experience in bringing software & services to the global aviation community. Senior positions at SITA, ICL, Travel Innovation Partners, etc.',
     img_url: 'images/team/richard.jpeg'
   },
   ingo: {
     name: 'Ingo Roessler',
     role: 'Chief Commercial Officer',
-    desc: 'Educated in Lufthansa with a solid background in air cargo &amp; system design. Helped shaping businesses by supporting innovative developments like Cargospot, Optiontown, Aviaso etc. Senior positions at Chapman Freeborn, Etihad Airways, Royal Jordanian Airlines, etc.',
+    desc: 'Educated in Lufthansa with a solid background in air cargo & system design. Helped shaping businesses by supporting innovative developments like Cargospot, Optiontown, Aviaso etc. Senior positions at Chapman Freeborn, Etihad Airways, Royal Jordanian Airlines, etc.',
     img_url: 'images/team/ingo.jpeg'
   },
   anders: {
     name: 'Anders Jensen',
     role: 'Chief Technology Officier',
-    desc: 'Strong academic upbringing in communication protocols &amp; modern cryptography. Closely involved in the development of 802.11 wireless standards as well as communication protocols for automatic data capture. Senior positions at Symbol Technologies, Cargolux Int’l Airlines, CHAMP Cargo Systems, &amp; multi-national organizations.',
+    desc: 'Strong academic upbringing in communication protocols & modern cryptography. Closely involved in the development of 802.11 wireless standards as well as communication protocols for automatic data capture. Senior positions at Symbol Technologies, Cargolux Int’l Airlines, CHAMP Cargo Systems, & multi-national organizations.',
     img_url: 'images/team/anders.jpg'
   }
 }
