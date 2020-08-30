@@ -60,7 +60,7 @@ export default () => {
             elements={["Seamless integration based on existing IATA standards and addresses",
                       "Unique Concept to secure Data and Data Exchanges",
                       "EDIfly team provides free analyses of traffic pattern",
-                      "Distributed ressources create resilliant infrastructure"]} />
+                      "Distributed ressources create resillient infrastructure"]} />
           <DescriptionItem icon={<GoCircuitBoard />} title="Replaces Legacy!"
             elements={["Free Type B, Type X Exchanges",
                       "Discard proprietary Type B gateways and clients",

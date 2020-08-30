@@ -73,10 +73,10 @@ export default ({data: {downloads}}) => {
             let files = downloads[key];
             return (
               <Col xs={12} md={4} key={key}>
-                <h4 className="text-left">{key}</h4> <br />
+                <h4 className="text-left"><b>{key}</b></h4> <br />
                   {files.map((file, index) => (
                     <p onClick={() => openModal(file)} className="text-left" key={index} style={{transform: 'rotate(0)'}}>
-                      <a href="#support" className="stretched-link" style={{color: 'white'}}>{file.title}</a>
+                      <a href="#support" className="stretched-link" style={{color: 'white'}}>{index+1}. {file.title}</a>
                     </p>
                   ))}
               </Col>)
