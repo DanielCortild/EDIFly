@@ -16,7 +16,7 @@ const TeamMembers = {
   },
   anders: {
     name: 'Anders Jensen',
-    role: 'Chief Technology Officier',
+    role: 'Chief Technology Officer',
     desc: 'Strong academic upbringing in communication protocols & modern cryptography. Closely involved in the development of 802.11 wireless standards as well as communication protocols for automatic data capture. Senior positions at Symbol Technologies, Cargolux Int’l Airlines, CHAMP Cargo Systems, & multi-national organizations.',
     img_url: 'images/team/anders.jpg'
   }
