@@ -14,16 +14,10 @@ export default function TopButton() {
         btn.hide();
       }
     });
-    btn.click(() => {
-      $(window).scrollTop(0);
-    });
+    btn.click(() => $(window).scrollTop(0));
   }, [])
 
-  return (
-    <div id="btnTop" style={fixedBtn}>
-      <FaArrowUp style={btnSvg}/>
-    </div>
-  )
+  return (<div id="btnTop" style={fixedBtn}><FaArrowUp style={btnSvg}/></div>);
 }
 
 const fixedBtn = {

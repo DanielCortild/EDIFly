@@ -13,14 +13,12 @@ export default ({data: {news}}) => {
       <Container className="text-center">
         <h2 className="title mb-5">EDIfly News</h2>
         <Row>
-            {news ? news.map((file, key) => {
-              return (
-                <Col xs={12} md={4}>
+            {news ? news.map((file, key) =>
+                <Col xs={12} md={4} key={key}>
                   <p onClick={() => directDownloadFiles(file)} className="text-left" key={key} style={{transform: 'rotate(0)'}}>
                     <a href="#news" className="stretched-link">{file.title}</a>
                   </p>          
-                </Col>)
-            }) : ''}
+                </Col>) : ''}
 
         </Row>
       </Container>

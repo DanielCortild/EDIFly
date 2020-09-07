@@ -25,7 +25,7 @@ export default ({data: {testimonials}}) => {
 		<section className="section section-gray p-5" id="testimonials" style={{background: '#8482af'}}>
 			<h2 className="title text-center my-3" style={{color: 'white'}}>Testimonials</h2>
 			<Carousel responsive={responsive} showDots removeArrowOnDeviceType={['desktop', 'mobile']}>
-				{Object.keys(testimonials).map(key => <Testimonial {...testimonials[key]}></Testimonial>)}
+				{Object.keys(testimonials).map(key => <Testimonial {...testimonials[key]} key={key}></Testimonial>)}
 			</Carousel>
 		</section>
   )

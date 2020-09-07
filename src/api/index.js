@@ -1,8 +1,7 @@
 import Axios from 'axios';
 import download from 'downloadjs';
 
-const backServer = process.env.NODE_ENV === 'development' ? 
-  'http://x.edifly.com' : 'http://x.edifly.com';
+const backServer = 'http://x.edifly.com';
 
 export const fetchData = async () => {
   let {data} = await Axios.get(`${backServer}/api`);

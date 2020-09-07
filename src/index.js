@@ -7,6 +7,4 @@ import './assets/css/my-button.css';
 
 import Home from "views/Home.js";
 
-ReactDOM.render(
-  <Home />, document.getElementById("root")
-);
+ReactDOM.render(<Home />, document.getElementById("root"));

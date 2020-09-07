@@ -23,7 +23,7 @@ export default ({data: {blog}}) => {
 		<section className="section section-gray p-5 pb-3" id="blog" style={{background: '#764a81'}}>
 			<h2 className="title text-center mb-4" style={{color: 'white'}}>Recent Blog Posts</h2>
 			<Carousel responsive={responsive} showDots removeArrowOnDeviceType={['desktop', 'mobile']}>
-				{Object.keys(blog).map(key => <BlogPost {...blog[key]} />)}
+				{Object.keys(blog).map(key => <BlogPost {...blog[key]} key={key} />)}
 			</Carousel>
 		</section>
   )

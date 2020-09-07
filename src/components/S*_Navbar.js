@@ -3,7 +3,7 @@ import React from "react";
 import $ from 'jquery';
 import cx from "classnames";
 
-import {Collapse, Navbar, NavItem, NavLink, NavbarBrand, Nav, Container} from "reactstrap";
+import {Collapse, Navbar, NavItem, NavbarBrand, Nav, Container} from "reactstrap";
 
 const NavbarItems = [
   ['whyedifly', 'Why EDIfly?'], 
@@ -29,9 +29,14 @@ export default () => {
     color: navbarColor === "" ? 
       (activeSection === sectionID || 
         (activeSection === "testimonials" && sectionID === "users") 
-        ? '#000000' : '#66615B') : 
-      (window.innerWidth >= 992 ? '#000' : '#000'),
-    fontWeight: '600'
+        ? '#000000' : '#66615B') : '#000',
+    fontWeight: '600',
+    lineHeight: '1.6',
+    margin: '15px 0px',
+    padding: '10px 15px',
+    opacity: '.8',
+    fontSize: '12px',
+    textTransform: 'uppercase'
   }};
 
   React.useEffect(() => {
@@ -72,12 +77,10 @@ export default () => {
         <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
           <Nav navbar>
             {NavbarItems.map(key => (
-              <NavItem>
-                <NavLink>
+              <NavItem key={key[0]}>
                   <a href={`#${key[0]}`} style={linkStyle(navbarColor, key[0])}>
                     {key[1]}
                   </a>
-                </NavLink>
               </NavItem>
             ))}
           </Nav>

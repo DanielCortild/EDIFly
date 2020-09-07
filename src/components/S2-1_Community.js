@@ -47,8 +47,8 @@ export default ({data: {users}}) => {
             let toggle = () => setOpenModal(key)
             return (
               <Col xs={6} sm={4} md={3} lg={2} className="p-4 mx-auto" key={key}>
-                <Row className="img-thumbnail h-100 align-items-center">
-                  <img src={img_url} alt={name} className="w-100" onClick={toggle} style={{cursor: 'pointer'}} />
+                <Row className="img-thumbnail h-100 align-items-center" onClick={toggle}>
+                  <img src={img_url} alt={name} className="w-100" style={{cursor: 'pointer'}} />
                 </Row>
               </Col>
             )
