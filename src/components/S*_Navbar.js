@@ -47,7 +47,7 @@ export default () => {
 
       $('section').each(function () {
         let that = $(this);
-        if(that.position().top <= scrollTop && (that.position().top + that.outerHeight()) > scrollTop) {
+        if(that.position().top <= scrollTop+1 && (that.position().top + that.outerHeight()) > scrollTop) {
           setActiveSection(that.attr('id'));
         }
       });
