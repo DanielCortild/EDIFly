@@ -1,8 +1,8 @@
 import Axios from 'axios';
 import download from 'downloadjs';
 
-//const backServer = 'http://x.edifly.com';
-const backServer = 'http://localhost:3000';
+const backServer = 'http://x.edifly.com';
+//const backServer = 'http://localhost:3000';
 
 export const fetchData = async () => {
   let {data} = await Axios.get(`${backServer}/api`);
