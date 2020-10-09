@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card, CardBody, CardTitle, Container, Row, Col} from "reactstrap";
+import {SiLinkedin} from 'react-icons/si';
 
 const TeamMembers = {
   richard: {
@@ -12,7 +13,8 @@ const TeamMembers = {
     name: 'Ingo Roessler',
     role: 'Chief Commercial Officer',
     desc: 'Educated in Lufthansa with a solid background in air cargo & system design. Helped shaping businesses by supporting innovative developments like Cargospot, Optiontown, Aviaso etc. Senior positions at Chapman Freeborn, Etihad Airways, Royal Jordanian Airlines, etc.',
-    img_url: 'images/team/ingo.jpeg'
+    img_url: 'images/team/ingo.jpeg',
+    linkedin: 'https://www.linkedin.com/in/ingo-roessler-1582961a/'
   },
   anders: {
     name: 'Anders Jensen',
@@ -22,7 +24,7 @@ const TeamMembers = {
   }
 }
 
-const TeamMember = ({name, role, desc, img_url}) => {
+const TeamMember = ({name, role, desc, img_url, linkedin}) => {
   return (
     <Col md="4">
       <Card className="card-profile card-plain">
@@ -33,6 +35,8 @@ const TeamMember = ({name, role, desc, img_url}) => {
             <h6 className="card-category">{role}</h6>
           </div>
           <p className="card-description text-center">{desc}</p>
+          <br />
+          {linkedin ? <a href={linkedin} target="_blank"><SiLinkedin size={24} color="#AAA"></SiLinkedin></a> : <></>}
         </CardBody>
       </Card>
     </Col>
